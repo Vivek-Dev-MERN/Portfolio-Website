@@ -1,0 +1,79 @@
+.projects {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.projects h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Automatically adjust the number of columns */
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.project-card p {
+  margin-bottom: 10px;
+}
+
+.project-card .btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.project-card .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .projects {
+    padding: 30px 15px; /* Adjust padding for smaller screens */
+  }
+
+  .projects h2 {
+    font-size: 28px; /* Reduce heading size on mobile */
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    gap: 15px; /* Reduce gap between project cards */
+  }
+
+  .project-card {
+    padding: 15px; /* Adjust padding inside cards for mobile */
+  }
+
+  .project-card h3 {
+    font-size: 24px; /* Adjust project title size */
+  }
+
+  .project-card p {
+    font-size: 16px; /* Adjust paragraph font size */
+  }
+
+  .project-card .btn {
+    font-size: 16px; /* Adjust button font size */
+    padding: 8px 12px; /* Adjust button padding */
+  }
+}

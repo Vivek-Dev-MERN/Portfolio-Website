@@ -1,0 +1,83 @@
+.contact {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+  height: 150px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.status-message {
+  margin-top: 20px;
+  font-size: 18px;
+  color: green;
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+  .contact {
+    padding: 30px 10px; /* Adjust padding for mobile */
+  }
+
+  .contact h2 {
+    font-size: 28px; /* Reduce heading size for mobile */
+  }
+
+  form {
+    width: 90%; /* Ensure the form is responsive */
+    padding: 0 15px; /* Add some padding on mobile */
+  }
+
+  input, textarea {
+    font-size: 14px; /* Adjust input font size for mobile */
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .status-message {
+    font-size: 16px; /* Adjust status message font size for mobile */
+  }
+}
