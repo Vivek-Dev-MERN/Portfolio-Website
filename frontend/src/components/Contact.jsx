@@ -19,7 +19,8 @@ const Contact = () => {
     e.preventDefault();
     if (formData.name && formData.email && formData.message) {
       try {
-        const response = await fetch('http://localhost:5000/send-email', {
+        // Update the API URL to use Vercel's serverless API route
+        const response = await fetch('/api/sendEmail', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
